@@ -126,12 +126,12 @@ body{
     top: 0%;
 }
 .number{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--Soft-red);
     font-size: 64px;
+    transition: transform 0.5s, opacity 0.5s;
 }
 .component-name{
     font-size: 14px;
@@ -148,6 +148,28 @@ footer a{
 footer a:hover{
     color: var(--Soft-red);
 }
+.animated-value {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+.out {
+    transform: rotateX(90deg);
+    opacity: 0;
+}
+.in {
+    transform: rotateX(-90deg);
+    opacity: 0;
+}
+
+.in.end {
+    transform: rotateX(0);
+    opacity: 1;
+}
+  
 @media screen and (max-width: 768px){
     body{
 

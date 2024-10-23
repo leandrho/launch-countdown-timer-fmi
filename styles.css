@@ -7,10 +7,6 @@
     --Dark-desaturated-blue: hsl(236, 21%, 26%);
     --Very-dark-blue: hsl(235, 16%, 14%);
     --Very-dark-mostly-black-blue: hsl(234, 17%, 12%);
-
-    --shadow: hsl(240, 17%, 12%);
-    --arriba: #2b2b44;
-    --abajo: hsl(236, 21%, 26%);
 }
 *,*::after,*::before{
     margin: 0;
